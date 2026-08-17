@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-14 09:14:54 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOTowMzoyNiBBTTsyNTAy"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOToxNDo1NCBBTTsxOzI2MTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="g" type="Integer" array="False" size=""/>
+            <assign variable="g" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <do expression="n&lt;0">
+                <output expression="&quot;Enter n&quot;" newline="True"/>
+                <input variable="n"/>
+            </do>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <declare name="c" type="Integer" array="False" size=""/>
+                <output expression="&quot;Enter c&quot;" newline="True"/>
+                <input variable="c"/>
+                <if expression="c&gt;g">
+                    <then>
+                        <assign variable="g" expression="c"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="g" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

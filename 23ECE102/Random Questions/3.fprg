@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-14 09:28:17 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOToxNTowMCBBTTsyNDk3"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOToyODoxNyBBTTsyOzI2MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <declare name="det" type="Real" array="False" size=""/>
+            <assign variable="det" expression="b^2-4*a*c"/>
+            <if expression="det&lt;0">
+                <then>
+                    <output expression="&quot;No real solutions&quot;" newline="True"/>
+                </then>
+                <else>
+                    <declare name="x1" type="Real" array="False" size=""/>
+                    <declare name="x2" type="Real" array="False" size=""/>
+                    <assign variable="x1" expression="(b^2 + sqrt(det))/(2*a)"/>
+                    <assign variable="x2" expression="(b^2 - sqrt(det))/(2*a)"/>
+                    <if expression="x1=x2">
+                        <then>
+                            <output expression="&quot;One solution &quot;&amp;x1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;Two solutions &quot;&amp;x1&amp;&quot; and &quot;&amp;x2" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

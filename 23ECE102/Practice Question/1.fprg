@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-14 09:56:44 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOTo1MDozNCBBTTsyNTAz"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xNDswOTo1Njo0NCBBTTsxOzI2MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter the cost of the first item&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter the cost of the second item&quot;" newline="True"/>
+            <input variable="b"/>
+            <declare name="sum" type="Real" array="False" size=""/>
+            <assign variable="sum" expression="a+b"/>
+            <output expression="&quot;The total of the two items are &quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
