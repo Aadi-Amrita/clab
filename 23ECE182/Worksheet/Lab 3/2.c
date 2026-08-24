@@ -1,3 +1,4 @@
+// Write a program to input the marks of a student (between 0 and 100), determine their grade, and display a descriptive message. The program must use only if and if-else statements, and no loops. 
 #include <stdio.h>
 
 int main(){
@@ -10,12 +11,14 @@ int main(){
     }else if (marks >= 75 && marks < 90)
     {
         printf("Grade B - Good performance");
-    } if (marks >= 50 && marks < 75)
+    } else if (marks >= 50 && marks < 75)
     {
         printf("Grade C - Average performance");
-    } if (marks >= 0 && marks < 50)
+    } else if (marks >= 0 && marks < 50)
     {
         printf("Grade D - Needs performance");
+    } else {
+        printf("Invalid marks");
     }
     
     

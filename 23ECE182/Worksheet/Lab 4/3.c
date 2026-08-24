@@ -2,19 +2,19 @@
 #include <string.h>
 
 int main(){
-    char in[50];
-    char out[50];
-    printf("Input number:   ");
-    fgets(in, sizeof(in),stdin);
-    int len = sizeof(in);
-    if(in[len]=='\n'){
+    char num[50];
+    char ans[50];
+    int len;
+    fgets(num,sizeof(num),stdin);
+    len = strlen(num);
+    if(num[len]=='\n'){
         len--;
     }
-    for (size_t i = 0; i < len-1; i++)
+    for (size_t i = 0; i < len; i++)
     {
-        out[i]=in[len-i-1];
+        ans[i]=num[len-i-1];
     }
-    printf("Inverted:   %s",out);
-    
+    ans[len]='\0';
+    printf("%s",ans);
     return 0;
 }
