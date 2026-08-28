@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 09:36:37 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswOTozMzozNCBBTTsyNTA5"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswOTozNjozNyBBTTsxOzI2MjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="time, hours, mins" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter time in minutes&quot;" newline="True"/>
+            <input variable="time"/>
+            <assign variable="hours" expression="time/60"/>
+            <assign variable="mins" expression="time%60"/>
+            <output expression="&quot;You were parked for &quot; &amp; hours &amp; &quot; hours and &quot; &amp; minutes &amp; &quot; minutes &quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

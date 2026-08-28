@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="eac26013"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 08:31:45 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xODswODozNzowNiBBTTsyNTEw"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswODozMTo0NSBBTTszOzI2MTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="x" expression="a+b"/>
+            <output expression="&quot;the sum is &quot;&amp;x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

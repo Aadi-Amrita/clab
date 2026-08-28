@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="parkinglot"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 09:06:03 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswOTowMjoxMyBBTTsyNTAy"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswOTowNjowMyBBTTsyOzI2MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, out" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter car number&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="out" expression="n%2"/>
+            <if expression="out==1">
+                <then>
+                    <output expression="&quot;Go to parking lot B&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Go to parking lot A&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

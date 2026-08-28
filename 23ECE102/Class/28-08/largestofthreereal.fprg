@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="largestoftwonums"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 08:23:13 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswODoxNzo0MSBBTTsyNTA4"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswODoyMzoxMyBBTTszOzI2MTQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Real" array="False" size=""/>
+            <declare name="b" type="Real" array="False" size=""/>
+            <declare name="c" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;Enter c&quot;" newline="True"/>
+            <input variable="c"/>
+            <if expression="a&gt;b">
+                <then>
+                    <comment text="a"/>
+                    <if expression="a&gt;c">
+                        <then>
+                            <output expression="&quot;The greatest number is a: &quot;&amp;a" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The greatest number is c: &quot;&amp;c" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <comment text="b"/>
+                    <if expression="b&gt;c">
+                        <then>
+                            <output expression="&quot;The greatest number is b: &quot;&amp;b" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;The greatest number is c: &quot;&amp;c" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="largestoftwonums"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-08-28 08:29:15 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswODoxNzo0MSBBTTsyNTA4"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswODoyOToxNSBBTTs1OzI2MjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="marks" type="Integer" array="True" size="4"/>
+            <declare name="greatest" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="greatest" expression="0"/>
+            <output expression="&quot;Enter marks for first student&quot;" newline="True"/>
+            <input variable="marks[0]"/>
+            <output expression="&quot;Enter marks for second student&quot;" newline="True"/>
+            <input variable="marks[1]"/>
+            <output expression="&quot;Enter marks for third student&quot;" newline="True"/>
+            <input variable="marks[2]"/>
+            <output expression="&quot;Enter marks for fourth student&quot;" newline="True"/>
+            <input variable="marks[3]"/>
+            <for variable="i" start="0" end="3" direction="inc" step="1">
+                <if expression="marks[i]&gt;greatest">
+                    <then>
+                        <assign variable="greatest" expression="marks[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;The greatest score is &quot;&amp;greatest" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -4,20 +4,19 @@
         <attribute name="name" value="eac26013"/>
         <attribute name="authors" value="year1"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2026-08-18 08:57:18 AM"/>
+        <attribute name="saved" value="2026-08-28 09:30:05 AM"/>
         <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xODswODozNzowNiBBTTsyNTEw"/>
-        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0xODswODo1NzoxOCBBTTsyOzI2MjQ="/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOC0yODswOTozMDowNSBBTTs1OzI2MTY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <comment text="EAC26013"/>
             <declare name="a, b, x" type="Real" array="False" size=""/>
-            <output expression="&quot;ENTER A NUMBER&quot;" newline="True"/>
+            <output expression="&quot;Enter a number&quot;" newline="True"/>
             <input variable="a"/>
             <input variable="b"/>
             <assign variable="x" expression="a+b"/>
-            <output expression="&quot;the sum is &quot;&amp;x" newline="True"/>
+            <output expression="ToFixed(x,2)" newline="True"/>
         </body>
     </function>
 </flowgorithm>
