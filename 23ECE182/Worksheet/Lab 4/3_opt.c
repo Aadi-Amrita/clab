@@ -2,19 +2,18 @@
 #include <string.h>
 
 int main(){
-    int num,a,b,c,d;
-    do
+    int num,ans=0;
+    printf("Enter a number:   ");
+    scanf("%d",&num);
+    while (num>0)
     {
-        printf("Enter a valid 4 digit number:   ");
-        scanf("%d",&num);
-
-    } while (num<1000 || num>9999);
-    a=num%10;
-    num=(num-a)/10;
-    b=num%10;
-    num=(num-b)/10;
-    c=num%10;
-    num=(num-c)/10;
-    d=num%10;
-    printf("%d%d%d%d",a,b,c,d);
+        ans=ans*10 + num%10;
+        if(num>10){
+            num=(num-num%10)/10;
+        }else{
+            num=0;
+        }
+    }
+    
+    printf("%d",ans);
 }
