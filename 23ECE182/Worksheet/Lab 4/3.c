@@ -5,6 +5,7 @@ int main(){
     char num[50];
     char ans[50];
     int len;
+    printf("Enter a ");
     fgets(num,sizeof(num),stdin);
     len = strlen(num);
     if(num[len]=='\n'){

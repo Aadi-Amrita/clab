@@ -1,19 +1,16 @@
 #include <stdio.h>
 
 int main(){
-    int nums[50];
     int count=0;
-    for (size_t i = 0; i < sizeof(nums); i++)
+    printf("Enter number of integers to add together:   ");
+    scanf("%d",&count); 
+    int nums[count];
+    for (size_t i = 0; i < count; i++)
     {
         int num;
-        printf("Enter num for array, enter -1 to stop or it will stop at 50 \n");
+        printf("Enter num for array\n");
         scanf("%d",&num);
-        if(num==-1){
-            break;
-        }else{
-            nums[i]=num;
-            count++;
-        }
+        nums[i]=num;
     }
     int sum=0;
     for (size_t i = 0; i < count; i++)

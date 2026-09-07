@@ -9,7 +9,7 @@ int main() {
     for (int i = 0; i < 5; i++) { 
 
         if (arr[i] == key) { 
-
+            
             printf("Element %d found at position %d\n", key, i + 1); 
 
             found = 1; 
