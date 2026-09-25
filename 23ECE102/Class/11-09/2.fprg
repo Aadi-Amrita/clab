@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="2"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-11 09:53:56 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOS0xMTswOTozOTozNCBBTTsyNTA4"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOS0xMTswOTo1Mzo1NiBBTTsxOzI2MTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, i, sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <input variable="num"/>
+            <assign variable="i" expression="0"/>
+            <do expression="sum&gt;10">
+                <if expression="sum==0">
+                    <then/>
+                    <else>
+                        <assign variable="num" expression="sum"/>
+                        <assign variable="sum" expression="0"/>
+                    </else>
+                </if>
+                <while expression="num!=0">
+                    <assign variable="sum" expression="sum+num%10"/>
+                    <if expression="num&gt;10">
+                        <then>
+                            <assign variable="num" expression="(num-num%10)/10"/>
+                        </then>
+                        <else>
+                            <assign variable="num" expression="0"/>
+                        </else>
+                    </if>
+                    <assign variable="i" expression="i+1"/>
+                </while>
+            </do>
+            <output expression="sum" newline="True"/>
+            <if expression="sum==3 || sum==6 || sum ==9">
+                <then>
+                    <output expression="&quot;Divisible by 3&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Not Divisible by 3&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

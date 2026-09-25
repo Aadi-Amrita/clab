@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="3"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-11 10:03:10 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOS0xMTswOTo1NTo0OSBBTTsyNTEy"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0wOS0xMTsxMDowMzoxMCBBTTsxOzI1OTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, lim, i" type="Integer" array="False" size=""/>
+            <input variable="num"/>
+            <assign variable="lim" expression="sqrt(num)"/>
+            <declare name="prime" type="Boolean" array="False" size=""/>
+            <assign variable="prime" expression="true"/>
+            <for variable="i" start="2" end="lim" direction="inc" step="1">
+                <if expression="num%i==0">
+                    <then>
+                        <assign variable="prime" expression="false"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="prime">
+                <then>
+                    <output expression="&quot;Is prime&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Isnt prime&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
