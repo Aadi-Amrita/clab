@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 08:45:54 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODozNTo0MiBBTTsyNDkz"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODo0NTo1NCBBTTszOzI2MDc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i" type="Integer" array="False" size=""/>
+            <declare name="sumi" type="Real" array="False" size=""/>
+            <assign variable="sumi" expression="0"/>
+            <output expression="&quot;How many resistors do you have in parallel?&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <declare name="r" type="Integer" array="False" size=""/>
+                <output expression="&quot;Enter resistance for R&quot;&amp;(i+1)" newline="True"/>
+                <input variable="r"/>
+                <assign variable="sumi" expression="sumi+(1.0/r)"/>
+            </for>
+            <output expression="&quot;Equivalent parallel resistance is &quot;&amp; (1/sumi)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

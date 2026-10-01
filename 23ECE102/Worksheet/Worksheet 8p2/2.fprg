@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 09:03:47 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODo1ODozMyBBTTsyNDk4"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswOTowMzo0NyBBTTsyOzI2MDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="text1, text2" type="String" array="False" size=""/>
+            <input variable="text1"/>
+            <input variable="text2"/>
+            <output expression="&quot;Concatenated is:&quot;" newline="True"/>
+            <output expression="text1&amp;text2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

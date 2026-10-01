@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 09:13:53 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODo0NzoyMyBBTTsyNDk1"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswOToxMzo1MyBBTTszOzI2MDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, k" type="Integer" array="False" size=""/>
+            <declare name="found" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter length of nums&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="nums" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <input variable="nums[i]"/>
+            </for>
+            <output expression="&quot;Enter number to search&quot;" newline="True"/>
+            <input variable="k"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <if expression="nums[i]==k">
+                    <then>
+                        <output expression="&quot;Found at &quot;&amp;(i+1)" newline="True"/>
+                        <assign variable="found" expression="True"/>
+                    </then>
+                    <else>
+                        <assign variable="found" expression="False"/>
+                    </else>
+                </if>
+            </for>
+            <if expression="found">
+                <then/>
+                <else>
+                    <output expression="&quot;not in list&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

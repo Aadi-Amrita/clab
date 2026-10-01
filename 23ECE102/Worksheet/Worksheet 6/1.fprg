@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 08:20:25 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODoxNjoyNyBBTTsyNDk1"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODoyMDoyNSBBTTsxOzI1OTY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c, D, x1, x2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a, b and c for ax^2+bx+c&quot;" newline="True"/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="D" expression="sqrt(b*b-4*a*c)"/>
+            <assign variable="x1" expression="(-b+D)/(2*a)"/>
+            <assign variable="x2" expression="(-b-D)/(2*a)"/>
+            <output expression="&quot;Roots are &quot; &amp; x1 &amp; &quot; and &quot; &amp; x2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
