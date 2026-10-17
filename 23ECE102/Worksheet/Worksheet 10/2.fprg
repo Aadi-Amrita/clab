@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-16 09:04:48 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODo0NzoyMyBBTTsyNDk1"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0xNjswODo1MToxMyBBTTsxO3llYXIxO0VDRUNMLVNZUzEzOzIwMjYtMTAtMDE7MDg6NDc6MjMgQU07My5mcHJnOzU3NDQ="/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0xNjswOTowNDo0OCBBTTsxNzsyNjY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter length of nums&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="arr" type="Integer" array="True" size="n"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="arr[i]" expression="Random(100)"/>
+                <output expression="arr[i]" newline="True"/>
+            </for>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <declare name="key" type="Integer" array="False" size=""/>
+                <assign variable="key" expression="arr[i]"/>
+                <assign variable="j" expression="i-1"/>
+                <if expression="j&gt;=0">
+                    <then>
+                        <while expression="j&gt;=0&amp;&amp;arr[j]&gt;key">
+                            <assign variable="arr[j+1]" expression="arr[j]"/>
+                            <assign variable="j" expression="j-1"/>
+                        </while>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="arr[j+1]" expression="key"/>
+            </for>
+            <output expression="&quot;========== SORTED ========== &quot;" newline="True"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <output expression="arr[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

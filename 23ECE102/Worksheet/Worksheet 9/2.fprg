@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="1"/>
+        <attribute name="authors" value="year1"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-16 08:41:30 AM"/>
+        <attribute name="created" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0wMTswODo0NzoyMyBBTTsyNDk1"/>
+        <attribute name="edited" value="eWVhcjE7RUNFQ0wtU1lTMTM7MjAyNi0xMC0xNjswODo0MTozMCBBTTs0OzI2MDQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, k" type="Integer" array="False" size=""/>
+            <declare name="found" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Enter length of nums&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="nums" type="Integer" array="True" size="n"/>
+            <declare name="low, high, mid" type="Integer" array="False" size=""/>
+            <assign variable="found" expression="False"/>
+            <for variable="i" start="0" end="n-1" direction="inc" step="1">
+                <assign variable="nums[i]" expression="i*10"/>
+                <output expression="nums[i]" newline="True"/>
+            </for>
+            <output expression="&quot;Enter number to search&quot;" newline="True"/>
+            <input variable="k"/>
+            <assign variable="low" expression="0"/>
+            <assign variable="high" expression="n-1"/>
+            <while expression="low&lt;=high">
+                <assign variable="mid" expression="(low+high)/2"/>
+                <if expression="nums[mid]==k">
+                    <then>
+                        <output expression="&quot;Element found at index &quot; &amp; mid" newline="True"/>
+                        <assign variable="found" expression="True"/>
+                        <assign variable="low" expression="high+3"/>
+                    </then>
+                    <else>
+                        <if expression="nums[mid]&lt;k">
+                            <then>
+                                <assign variable="low" expression="mid+1"/>
+                            </then>
+                            <else>
+                                <assign variable="high" expression="mid-1"/>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <if expression="found==False">
+                <then>
+                    <output expression="&quot;Element not found&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
